@@ -1,9 +1,66 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.3">
   <diagram name="Page-1" id="9SeSk8t-YYjc7bsz_7wQ">
-    <mxGraphModel>
+    <mxGraphModel dx="1020" dy="683" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="IXQUPq6zcu1fhBMPY0_l-6" value="AuthenticationDTO" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="210" width="160" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="IXQUPq6zcu1fhBMPY0_l-7" value="&lt;div&gt;&amp;nbsp; identityProvider: string;&lt;/div&gt;&lt;div&gt;&amp;nbsp; clientId: string;&lt;/div&gt;&lt;div&gt;&amp;nbsp; authority: string;&lt;/div&gt;&lt;div&gt;&amp;nbsp; knownAuthorities: string[];&lt;/div&gt;&lt;div&gt;&amp;nbsp; scopes: string[];&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="IXQUPq6zcu1fhBMPY0_l-6">
+          <mxGeometry y="26" width="160" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="IXQUPq6zcu1fhBMPY0_l-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="IXQUPq6zcu1fhBMPY0_l-6">
+          <mxGeometry y="120" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="IXQUPq6zcu1fhBMPY0_l-10" value="authen service endpoint" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="IXQUPq6zcu1fhBMPY0_l-11" value="&lt;div&gt;prefix and version&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="IXQUPq6zcu1fhBMPY0_l-10">
+          <mxGeometry y="50" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IXQUPq6zcu1fhBMPY0_l-23" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="440" y="170" width="330" height="422" as="geometry" />
+        </mxCell>
+        <mxCell id="IXQUPq6zcu1fhBMPY0_l-19" value="AuthProvider" style="html=1;dropTarget=0;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="IXQUPq6zcu1fhBMPY0_l-23">
+          <mxGeometry x="-70" width="400" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="IXQUPq6zcu1fhBMPY0_l-20" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" vertex="1" parent="IXQUPq6zcu1fhBMPY0_l-19">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IXQUPq6zcu1fhBMPY0_l-15" value="MsalProvider" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="IXQUPq6zcu1fhBMPY0_l-23">
+          <mxGeometry x="20" y="40" width="210" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="IXQUPq6zcu1fhBMPY0_l-22" value="AuthStateContext.Provider" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="IXQUPq6zcu1fhBMPY0_l-23">
+          <mxGeometry x="35" y="80" width="190" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="IXQUPq6zcu1fhBMPY0_l-24" value="" style="group" vertex="1" connectable="0" parent="IXQUPq6zcu1fhBMPY0_l-23">
+          <mxGeometry x="-30" y="151" width="340" height="271" as="geometry" />
+        </mxCell>
+        <mxCell id="IXQUPq6zcu1fhBMPY0_l-25" value="AppInit" style="html=1;dropTarget=0;whiteSpace=wrap;verticalAlign=top;" vertex="1" parent="IXQUPq6zcu1fhBMPY0_l-24">
+          <mxGeometry width="340" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="IXQUPq6zcu1fhBMPY0_l-26" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" vertex="1" parent="IXQUPq6zcu1fhBMPY0_l-25">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IXQUPq6zcu1fhBMPY0_l-30" value="AuthenticationTemplate" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="IXQUPq6zcu1fhBMPY0_l-24">
+          <mxGeometry x="9.18918918918919" y="80" width="147.02702702702703" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IXQUPq6zcu1fhBMPY0_l-31" value="UnauthenticationTemplate" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="IXQUPq6zcu1fhBMPY0_l-24">
+          <mxGeometry x="183.78378378378378" y="80" width="147.02702702702703" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="IXQUPq6zcu1fhBMPY0_l-33" value="Login" style="html=1;dropTarget=0;whiteSpace=wrap;" vertex="1" parent="IXQUPq6zcu1fhBMPY0_l-24">
+          <mxGeometry x="202.16216216216216" y="120" width="110.27027027027027" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="IXQUPq6zcu1fhBMPY0_l-34" value="" style="shape=module;jettyWidth=8;jettyHeight=4;" vertex="1" parent="IXQUPq6zcu1fhBMPY0_l-33">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
